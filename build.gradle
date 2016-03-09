@@ -1,0 +1,24 @@
+group 'com.codesanook.example'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.7.RELEASE")
+    }
+}
+apply plugin: 'spring-boot'
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.2.7.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb:1.2.7.RELEASE")
+}
